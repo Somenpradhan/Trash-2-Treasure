@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Exchange Platform</title>
+    <style>
+        /* Basic Styling - Customize as needed */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2, h3 {
+            text-align: center;
+        }
+        .exchange-form {
+            display: flex;
+            flex-direction: column; /* Stack form elements vertically */
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Include padding in width */
+        }
+        textarea {
+            height: 120px; /* Adjust height as needed */
+        }
+        .submit-btn {
+            background-color: #007bff; /* Example color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+        /* Styles for the "After Listing" page */
+        #after-listing {
+            display: none; /* Initially hidden */
+            text-align: center;
+        }
+        #after-listing img { /* Style for the image */
+          max-width: 300px; /* Or whatever size you prefer */
+          height: auto;
+          margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="productForm" method="get" action="http://local:8080/#exchange">
+        <section id="exchange" class="section">
+            <h2>Product Exchange Platform</h2>
+            <div class="exchange-form">
+                <h3>List Your Product</h3>
+                <div class="form-group">
+                    <input type="text" id="productName" placeholder="Product Name" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="productDescription" placeholder="Product Description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="file" id="productImage" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <select id="productCategory" required>
+                        <option value="">Select Category</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn" onclick="window.open('/#exchange' ,'_blank');">List Product</button>
+            </div>
+        </section>
+    </form>
+
+
+    <section id="after-listing" class="section">
+        <h2>Thank You for Listing Your Product!</h2>
+        <p>Your product has been successfully listed.  We will notify you when someone shows interest.</p>
+        <img src="" alt="Success Image">  </section>
+
+    <script>
+        const form = document.getElementById('productForm');
+        const exchangeSection = document.getElementById('exchange');
+        const afterListingSection = document.getElementById('after-listing');
+
+        form.addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent actual form submission (for demo)
+
+          // In a real application, you would handle form submission here (e.g., AJAX request)
+          // and only show the "after-listing" section after successful submission.
+
+          // For this example, we'll just simulate a successful submission:
+          exchangeSection.style.display = 'none';
+          afterListingSection.style.display = 'block';
+
+          // You can also reset the form if needed:
+          // form.reset();
+        });
+        window.location.href = "submission.html";
+    </script>
+
+</body>
+</html>

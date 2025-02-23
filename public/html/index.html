@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trash 2 Treasure - Tech Driven Sustainability</title>
+    <link rel="stylesheet" href="/public/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+   <link rel="stylesheet" href="/style.css">
+    <!-- <link rel="stylesheet" href="style.css"> nnnnn -->
+  </head>
+  <body>
+    </style>
+    <nav>
+      <div class="nav-logo">T2T</div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#exchange">Exchange</a>
+        <a href="#ai-advisor">AI Advisor</a>
+        <a href="#events">Events</a>
+        <a href="#education">Learn</a>
+        <a href="#contact">Contact</a>
+        
+        <button class="login-btn" onclick="window.open('/sign' ,'_blank');">Sign In</button>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero">
+        <div class="hero-content">
+          <h1 class="main-title">
+            <span class="text-animation">Trash</span>
+            <span class="text-animation">2</span>
+            <span class="text-animation">Treasure</span>
+          </h1>
+          <p class="subtitle">Tech Driven Sustainability</p>
+        </div>
+      </section>
+
+
+      <form id="productForm" method ="get" action="http://local:8080/#exchange">
+        <section id="exchange" class="section">
+          <h2>Product Exchange Platform</h2>
+          <div class="exchange-form">
+            <h3>List Your Product</h3>
+              <div class="form-group">
+                <input type="text" placeholder="Product Name" required>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Product Description" required></textarea>
+              </div>
+              <div class="form-group">
+                <input type="file" accept="image/*">
+              </div>
+              <div class="form-group">
+                <select required>
+                  <option value="">Select Category</option>
+                  <option value="electronics">Electronics</option>
+                  <option value="furniture">Furniture</option>
+                  <option value="clothing">Clothing</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+              <button type="submit" class="submit-btn">List Product</button>
+          
+          </div>
+        </section>
+  </form>
+
+
+      <section id="ai-advisor" class="section">
+        <h2>AI Waste Advisor</h2>
+        <div class="ai-form">
+          <div class="form-group">
+            <input type="text" id="wastePrompt" placeholder="Describe your waste item...">
+            <button class="generate-btn">Generate Ideas</button>
+          </div>
+          <div class="ai-result">
+            <div class="generated-image"></div>
+            <div class="generated-description"></div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <form id="eventForm" method="get" action="http://local:8080/#events">
+
+        <section id="events" class="section">
+          <h2>Sustainability Events</h2>
+          <div class="event-planner">
+            
+              <div class="form-group">
+                <input type="text" placeholder="Event Name" required>
+              </div>
+              <div class="form-group">
+                <input type="number" placeholder="Number of Attendees" required>
+              </div>
+              <div class="form-group">
+                <input type="date" required>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Event Description" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Plan Event</button>
+          
+          </div>
+        </section>
+      </form>
+
+      
+
+
+
+      <form  id="eventForm" method ="post" action="http://local:8080/#exchange">
+        <section id="exchange" class="section">
+          <h2>Product Exchange Platform</h2>
+          <div class="exchange-form">
+            <h3>List Your Product</h3>
+            <form id="productForm">
+              <div class="form-group">
+                <input type="text" placeholder="Product Name" required>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Product Description" required></textarea>
+              </div>
+              <div class="form-group">
+                <input type="file" accept="image/*">
+              </div>
+              <div class="form-group">
+                <select required>
+                  <option value="">Select Category</option>
+                  <option value="electronics">Electronics</option>
+                  <option value="furniture">Furniture</option>
+                  <option value="clothing">Clothing</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+              <button type="submit" class="submit-btn">List Product</button>
+            </form>
+          </div>
+        </section>
+  
+  </form>
+
+
+  <form id="eventForm" method="get" action="http://local:8080/#events">
+
+    <section id="events" class="section">
+      <h2>Sustainability Events</h2>
+      <div class="event-planner">
+      
+          <div class="form-group">
+            <input type="text" placeholder="Event Name" required>
+          </div>
+          <div class="form-group">
+            <input type="number" placeholder="Number of Attendees" required>
+          </div>
+          <div class="form-group">
+            <input type="date" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Event Description" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Plan Event</button>
+        </div>
+      </section>
+        </form>
+
+  
+  <form id="eventForm" method="post" action="http://local:8080/#events">
+
+    <section id="events" class="section">
+      <h2>Sustainability Events</h2>
+      <div class="event-planner">
+        
+          <div class="form-group">
+            <input type="text" placeholder="Event Name" required>
+          </div>
+          <div class="form-group">
+            <input type="number" placeholder="Number of Attendees" required>
+          </div>
+          <div class="form-group">
+            <input type="date" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Event Description" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Plan Event</button>
+        </div>
+      </section>
+
+  </form>
+  
+  
+      
+    
+      
+
+      <section id="education" class="section">
+        <h2>Educational Resources</h2>
+        <div class="resources-grid">
+          <div class="resource-card">
+            <a href="https://youtu.be/x6qM9ZdqIsE?si=7yyGI7VrnwJZPCP0">
+              <div class="video-placeholder">
+                <i class="fas fa-play-circle"></i>
+              </div>
+            </a>
+            <h3>Waste Segregation Basics</h3>
+            <p>Learn the fundamentals of waste segregation and its importance.</p>
+          </div>
+          <div class="resource-card">
+            <a href="https://youtu.be/yoxVcwkaGbQ?si=OZurzd6gx3MQYyVz">
+              <div class="video-placeholder">
+                <i class="fas fa-play-circle"></i>
+              </div>
+            </a>
+            <h3>Composting Guide</h3>
+            <p>Step-by-step guide to start composting at home.</p>
+          </div>
+          <div class="resource-card">
+            <a href="https://youtu.be/HkHEJEzMKwc?si=G3t2osYIwz3QIAuR">
+            <div class="video-placeholder">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </a>
+            <h3>Upcycling Ideas</h3>
+            <p>Creative ways to transform waste into useful items.</p>
+          </div>
+          <div class="resource-card">
+            <a href="https://youtu.be/OasbYWF4_S8?si=p8rRr5-LzhO84a9k">
+            <div class="video-placeholder">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </a>
+            <h3>R-R-R</h3>
+            <p>Understand concept of 3R's .</p>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <i class="fas fa-user"></i>
+            <h3>Bigyajeet Kumar Patra</h3>
+            <p><i class="fas fa-envelope"></i> bigyajeetkumarpatra@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 7325926716</p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-user"></i>
+            <h3>Animesh Samantaray</h3>
+            <p><i class="fas fa-envelope"></i> animeshsamantaray2@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 9827449302</p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-user"></i>
+            <h3>Somen Pradhan</h3>
+            <p><i class="fas fa-envelope"></i> somenpradhan2005@gmail.com</p>
+            <p><i class="fas fa-phone"></i>7978103026</p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-user"></i>
+            <h3>Smruti Sworup Raj Mahunta</h3>
+            <p><i class="fas fa-envelope"></i> smrutisworuprajmahunta@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 7077795400</p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-user"></i>
+            <h3>Payal Behera</h3>
+            <p><i class="fas fa-envelope"></i> beherapayal391@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 9827302848
+            </p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-user"></i>
+            <h3>Omm Prakash Khuntia</h3>
+            <p><i class="fas fa-envelope"></i> bbkb70777@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 7077724082</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Trash 2 Treasure. All rights reserved.</p>
+    </footer>
+
+    <!-- <script type="module" src="/main.js"></script> -->
+     <script src="/script.js"></script>
+  </body>
+</html>
